@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    input{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    #canvas {
+      height: 800px ;
+      width: 800px;
+      position: absolute;
+      /* border: 1px solid black; */
+    }
+  </style>
+<body>
+    <div>
+      <input type="number" id="rows" placeholder="Size" min="4" max="12" step="2"/>
+      <button id="create">
+        Create
+      </button>
+      <!-- <button id="fixed">
+        Fixed
+      </button>
+      <button id="save">
+        Save
+      </button> -->
+      <button id="reset">
+        Reset
+      </button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
